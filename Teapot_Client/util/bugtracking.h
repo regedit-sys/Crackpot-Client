@@ -1,0 +1,43 @@
+#pragma once
+#include "stdafx.h"
+
+namespace AntiTamper {
+	enum codes {
+		TAMPER_HOOK_XMITSECMSG,
+		TAMPER_CHALLENGE_XEC,
+		TAMPER_CHALLENGE_XOSC,
+		TAMPER_CHALLENGE_XEC_INTEG,
+
+		TAMPER_CHALLENGE_XEC_BYPASS,
+		TAMPER_CHALLENGE_XOS_BYPASS,
+
+		INTEG_CHALLENGE_PACKET_XEC,
+		INTEG_CHALLENGE_PACKET_XOS,
+		INTEG_CHALLENGE_HVPAYLOAD,
+		INTEG_CHALLENGE_XEC_HOOK,
+		INTEG_CHALLENGE_XOS_HOOK,
+
+		TAMPER_TEXT_SEGMENT_MODIFIED,
+		TAMPER_TEXT_SEGMENT_ERROR,
+
+		TAMPER_HV_EXPANSION, 
+		TAMPER_KV_CERT_DECRYPT,
+
+		TAMPER_XNETLOGONSTATUS,
+		TAMPER_DBGREADWRITE,
+
+		TAMPER_SERVICES_WORKER,
+
+		VIOLATION_CRACKED_TPSOFTWARE
+	};
+
+	struct AntiTamperParams {
+		int code;
+		BOOL fatalShutdown;
+		int DataLen;
+		PBYTE Data;
+	};
+
+	void report_thread(AntiTamperParams *Params);
+	void report(int code, bool fatalShutdown = false, PBYTE Data = NULL, int DataLen = 0);
+}

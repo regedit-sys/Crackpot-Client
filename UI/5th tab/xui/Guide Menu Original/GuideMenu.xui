@@ -1,0 +1,52 @@
+<XuiCanvas version="000c">
+<Properties>
+<Id>XuiCanvas</Id>
+<Width>425.000000</Width>
+<Height>180.000000</Height>
+</Properties>
+<XamScene>
+<Properties>
+<Id>ScnMainMenu</Id>
+<Width>323.000000</Width>
+<Height>200.000000</Height>
+<Position>0.000000,1.000000,0.000000</Position>
+<ClassOverride>ScnMainMenu</ClassOverride>
+<DefaultFocus>btnRedeem</DefaultFocus>
+</Properties>
+<XamNavButton>
+<Properties>
+<Id>btnReflashKV</Id>
+<Width>323.000000</Width>
+<Height>28.000000</Height>
+<Position>0.000000,56.000000,0.000000</Position>
+<Visual>XuiButtonGuide</Visual>
+<NavUp>btnXeCheats</NavUp>
+<NavDown>btnRedeem</NavDown>
+<Text>Reflash KV</Text>
+</Properties>
+</XamNavButton>
+<XamNavButton>
+<Properties>
+<Id>btnXeCheats</Id>
+<Width>323.000000</Width>
+<Height>28.000000</Height>
+<Position>0.000000,28.000000,0.000000</Position>
+<Visual>XuiButtonGuide</Visual>
+<NavUp>btnRedeem</NavUp>
+<NavDown>btnReflashKV</NavDown>
+<Text>Load Cheats</Text>
+</Properties>
+</XamNavButton>
+<XamNavButton>
+<Properties>
+<Id>btnRedeem</Id>
+<Width>323.000000</Width>
+<Height>28.000000</Height>
+<Visual>XuiButtonGuide</Visual>
+<NavUp>btnReflashKV</NavUp>
+<NavDown>btnXeCheats</NavDown>
+<Text>Redeem Token</Text>
+</Properties>
+</XamNavButton>
+</XamScene>
+</XuiCanvas>

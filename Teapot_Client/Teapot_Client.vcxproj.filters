@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Root">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Root\hud">
+      <UniqueIdentifier>{1fd996db-30c9-4fbe-8cd5-a88d3b90979b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root\hud\dashboard">
+      <UniqueIdentifier>{cb121f1d-55b3-4d7a-92a9-530d80a4a4bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root\hud\settings">
+      <UniqueIdentifier>{fe2d24c5-538c-49ca-9f9b-82c6130896b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root\xbox">
+      <UniqueIdentifier>{6f882338-2363-4f4c-b3bf-a6b3cb91196f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root\util">
+      <UniqueIdentifier>{dd764021-127f-4499-93f7-db40d16e65b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root\security">
+      <UniqueIdentifier>{b1e7cb1a-cfcb-47fb-975d-e41b4edce8dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root\includes">
+      <UniqueIdentifier>{ace8164f-7736-464f-83f2-45e8de91916e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root\networking">
+      <UniqueIdentifier>{c08de102-2cd6-4555-9331-cdcb8b8565b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root\util\i/o">
+      <UniqueIdentifier>{9b10b9b7-ab11-4a51-8a65-72c6f71a7d00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root\appmanager">
+      <UniqueIdentifier>{53395f2c-173e-49e1-8880-d729f402b19f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root\cheats">
+      <UniqueIdentifier>{25d14a06-bb99-4598-96fa-388f497290d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Root\dlaunch">
+      <UniqueIdentifier>{3c93d615-acaa-460c-8bdb-46e9fb34f34f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="xbox\challenges.cpp">
+      <Filter>Root\xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="xbox\XNotify.cpp">
+      <Filter>Root\xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="hooks_sys.cpp">
+      <Filter>Root\xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="xbox\kv.cpp">
+      <Filter>Root\xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="xbox\XBL.cpp">
+      <Filter>Root\xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="util\Detour.cpp">
+      <Filter>Root\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\timers.cpp">
+      <Filter>Root\util</Filter>
+    </ClCompile>
+    <ClCompile Include="util\util.cpp">
+      <Filter>Root\util</Filter>
+    </ClCompile>
+    <ClCompile Include="networking\netclient.cpp">
+      <Filter>Root\networking</Filter>
+    </ClCompile>
+    <ClCompile Include="networking\net_request.cpp">
+      <Filter>Root\networking</Filter>
+    </ClCompile>
+    <ClCompile Include="hud\xui.cpp">
+      <Filter>Root\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="hud\hud.cpp">
+      <Filter>Root\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="hud\scn5Tab.cpp">
+      <Filter>Root\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="hud\scnMainMenu.cpp">
+      <Filter>Root\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="hud\token.cpp">
+      <Filter>Root\hud</Filter>
+    </ClCompile>
+    <ClCompile Include="hud\dashboard\DashXUI.cpp">
+      <Filter>Root\hud\dashboard</Filter>
+    </ClCompile>
+    <ClCompile Include="hud\dashboard\dash.cpp">
+      <Filter>Root\hud\dashboard</Filter>
+    </ClCompile>
+    <ClCompile Include="hud\dashboard\DashboardHooks.cpp">
+      <Filter>Root\hud\dashboard</Filter>
+    </ClCompile>
+    <ClCompile Include="hud\preferences\pluginManager.cpp">
+      <Filter>Root\hud\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="hud\preferences\designer.cpp">
+      <Filter>Root\hud\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="hud\preferences\options.cpp">
+      <Filter>Root\hud\settings</Filter>
+    </ClCompile>
+    <ClCompile Include="security\nativeInvoker.cpp">
+      <Filter>Root\security</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Root\includes</Filter>
+    </ClCompile>
+    <ClCompile Include="strings.cpp">
+      <Filter>Root\security</Filter>
+    </ClCompile>
+    <ClCompile Include="util\XeCrypt.cpp">
+      <Filter>Root\security</Filter>
+    </ClCompile>
+    <ClCompile Include="util\io.cpp">
+      <Filter>Root\util\i/o</Filter>
+    </ClCompile>
+    <ClCompile Include="util\INIReader.cpp">
+      <Filter>Root\util\i/o</Filter>
+    </ClCompile>
+    <ClCompile Include="security\segmentHashing.cpp">
+      <Filter>Root\security</Filter>
+    </ClCompile>
+    <ClCompile Include="xbox\Hypervisor.cpp">
+      <Filter>Root\xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="util\bugtracking.cpp">
+      <Filter>Root\security</Filter>
+    </ClCompile>
+    <ClCompile Include="Entry.cpp">
+      <Filter>Root</Filter>
+    </ClCompile>
+    <ClCompile Include="globals.cpp">
+      <Filter>Root</Filter>
+    </ClCompile>
+    <ClCompile Include="iniConfig.cpp">
+      <Filter>Root</Filter>
+    </ClCompile>
+    <ClCompile Include="Teapot.cpp">
+      <Filter>Root</Filter>
+    </ClCompile>
+    <ClCompile Include="appmanager\AppManager.cpp">
+      <Filter>Root\appmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="appmanager\AppManager_Hooks.cpp">
+      <Filter>Root\appmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="appmanager\AppInstance.cpp">
+      <Filter>Root\appmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="appmanager\AppEvents.cpp">
+      <Filter>Root\appmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\CheatEngine.cpp">
+      <Filter>Root\cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="cheats\Anticheat.cpp">
+      <Filter>Root\cheats</Filter>
+    </ClCompile>
+    <ClCompile Include="NtFile.cpp">
+      <Filter>Root\security</Filter>
+    </ClCompile>
+    <ClCompile Include="xbox\Devkit.cpp">
+      <Filter>Root\xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="security\XMitSecMsg.cpp">
+      <Filter>Root\security</Filter>
+    </ClCompile>
+    <ClCompile Include="security\aes.cpp">
+      <Filter>Root\security</Filter>
+    </ClCompile>
+    <ClCompile Include="xbox\XamExecuteChallenge.cpp">
+      <Filter>Root\xbox</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory.cpp">
+      <Filter>Root</Filter>
+    </ClCompile>
+    <ClCompile Include="Services.cpp">
+      <Filter>Root</Filter>
+    </ClCompile>
+    <ClCompile Include="Updater.cpp">
+      <Filter>Root</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hud\hud.h">
+      <Filter>Root\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="hud\scnMainMenu.h">
+      <Filter>Root\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="hud\ScnTab5.h">
+      <Filter>Root\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="networking\net_request.h">
+      <Filter>Root\networking</Filter>
+    </ClInclude>
+    <ClInclude Include="networking\netclient.h">
+      <Filter>Root\networking</Filter>
+    </ClInclude>
+    <ClInclude Include="xbox\kv.h">
+      <Filter>Root\xbox</Filter>
+    </ClInclude>
+    <ClInclude Include="xbox\XBL.h">
+      <Filter>Root\xbox</Filter>
+    </ClInclude>
+    <ClInclude Include="xbox\challenges.h">
+      <Filter>Root\xbox</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Detour.h">
+      <Filter>Root\util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\util.h">
+      <Filter>Root\util</Filter>
+    </ClInclude>
+    <ClInclude Include="hud\token.h">
+      <Filter>Root\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="xbox\XNotify.h">
+      <Filter>Root\xbox</Filter>
+    </ClInclude>
+    <ClInclude Include="hooks_sys.h">
+      <Filter>Root\xbox</Filter>
+    </ClInclude>
+    <ClInclude Include="hud\xui.h">
+      <Filter>Root\hud</Filter>
+    </ClInclude>
+    <ClInclude Include="hud\dashboard\DashboardHooks.h">
+      <Filter>Root\hud\dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="hud\dashboard\DashXUI.h">
+      <Filter>Root\hud\dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="hud\dashboard\dash.h">
+      <Filter>Root\hud\dashboard</Filter>
+    </ClInclude>
+    <ClInclude Include="util\timer.h">
+      <Filter>Root\util</Filter>
+    </ClInclude>
+    <ClInclude Include="hud\preferences\designer.h">
+      <Filter>Root\hud\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="hud\preferences\options.h">
+      <Filter>Root\hud\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="hud\preferences\pluginManager.h">
+      <Filter>Root\hud\settings</Filter>
+    </ClInclude>
+    <ClInclude Include="security\nativeInvoker.h">
+      <Filter>Root\security</Filter>
+    </ClInclude>
+    <ClInclude Include="security\natives.h">
+      <Filter>Root\security</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Root\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Root\includes</Filter>
+    </ClInclude>
+    <ClInclude Include="strings.h">
+      <Filter>Root\security</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="util\XeCrypt.h">
+      <Filter>Root\security</Filter>
+    </ClInclude>
+    <ClInclude Include="util\io.h">
+      <Filter>Root\util\i/o</Filter>
+    </ClInclude>
+    <ClInclude Include="util\SimpleIni.h">
+      <Filter>Root\util\i/o</Filter>
+    </ClInclude>
+    <ClInclude Include="util\INIReader.h">
+      <Filter>Root\util\i/o</Filter>
+    </ClInclude>
+    <ClInclude Include="security\segmentHashing.h">
+      <Filter>Root\security</Filter>
+    </ClInclude>
+    <ClInclude Include="xbox\Hypervisor.h">
+      <Filter>Root\xbox</Filter>
+    </ClInclude>
+    <ClInclude Include="util\bugtracking.h">
+      <Filter>Root\security</Filter>
+    </ClInclude>
+    <ClInclude Include="Teapot.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="exports.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="iniConfig.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Events.h">
+      <Filter>Root\util</Filter>
+    </ClInclude>
+    <ClInclude Include="appmanager\AppManager.h">
+      <Filter>Root\appmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="appmanager\AppManager_Hooks.h">
+      <Filter>Root\appmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="appmanager\AppInstance.h">
+      <Filter>Root\appmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="appmanager\AppEvents.h">
+      <Filter>Root\appmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\CheatEngine.h">
+      <Filter>Root\cheats</Filter>
+    </ClInclude>
+    <ClInclude Include="dlaunch\dlaunch.h">
+      <Filter>Root\dlaunch</Filter>
+    </ClInclude>
+    <ClInclude Include="dlaunch\dlaunch_defs.h">
+      <Filter>Root\dlaunch</Filter>
+    </ClInclude>
+    <ClInclude Include="cheats\Anticheat.h">
+      <Filter>Root\cheats</Filter>
+    </ClInclude>
+    <ClInclude Include="xbox\Devkit.h">
+      <Filter>Root\xbox</Filter>
+    </ClInclude>
+    <ClInclude Include="security\XMitSecMsg.h">
+      <Filter>Root\security</Filter>
+    </ClInclude>
+    <ClInclude Include="security\aes.h">
+      <Filter>Root\security</Filter>
+    </ClInclude>
+    <ClInclude Include="xbox\XamExecuteChallenge.h">
+      <Filter>Root\xbox</Filter>
+    </ClInclude>
+    <ClInclude Include="networking\net.h">
+      <Filter>Root\networking</Filter>
+    </ClInclude>
+    <ClInclude Include="Services.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="Updater.h">
+      <Filter>Root</Filter>
+    </ClInclude>
+    <ClInclude Include="NtFile.h">
+      <Filter>Root\security</Filter>
+    </ClInclude>
+    <ClInclude Include="GTAScratch.h">
+      <Filter>Root\cheats</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Teapot-Devkit.xml" />
+    <None Include="Teapot-Retail.xml" />
+    <None Include="NOTES.log" />
+  </ItemGroup>
+</Project>

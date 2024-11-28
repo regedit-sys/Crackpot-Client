@@ -1,0 +1,36 @@
+HRESULT AddText(HXUIOBJ* ObjToAttatchTo, HXUIOBJ* Obj, LPCWSTR Id, DWORD Color, FLOAT PointSize, FLOAT x, FLOAT y, LPCWSTR Text) {
+        D3DXVECTOR3 pos;
+        XUIElementPropVal propVal;
+
+        XuiCreateObject(XUI_CLASS_TEXT, Obj);
+
+        XuiElementSetBounds(*Obj, 255.0, 28.0);
+
+        pos.x = x; pos.y = y; pos.z = 0;
+        XuiElementSetPosition(*Obj, &pos);
+
+        propVal.SetVal(Id);
+        SetProperty(*Obj, L"Id", &propVal);
+
+        propVal.SetVal(PointSize);
+        SetProperty(*Obj, L"PointSize", &propVal);
+
+        propVal.SetColorVal(Color);
+        SetProperty(*Obj, L"TextColor", &propVal);
+
+        XuiTextElementSetText(*Obj, Text);
+        XuiElementAddChild(*ObjToAttatchTo, *Obj);
+
+        return ERROR_SUCCESS;
+    }
+this is just test code. theres better ways to do this shit and add checks
+HRESULT SetProperty(HXUIOBJ Obj, LPCWSTR szPropName, XUIElementPropVal* propVal) {
+        HRESULT result = E_FAIL;
+
+        DWORD propID = 0;
+        if (NT_SUCCESS(result = XuiObjectGetPropertyId(Obj, szPropName, &propID)))
+            result = XuiObjectSetProperty(Obj, propID, 0, propVal);
+        return result;
+    }
+
+//on GuideMain.xur load

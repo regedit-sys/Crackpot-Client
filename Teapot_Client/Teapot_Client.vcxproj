@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Xbox 360">
+      <Configuration>Debug</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RELEASE_DEC|Xbox 360">
+      <Configuration>RELEASE_DEC</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_DEVKIT|Xbox 360">
+      <Configuration>Release_DEVKIT</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_LTCG|Xbox 360">
+      <Configuration>Release_LTCG</Configuration>
+      <Platform>Xbox 360</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{29290198-433A-4727-BE7E-396D19AF49B4}</ProjectGuid>
+    <Keyword>Xbox360Proj</Keyword>
+    <ProjectName>Teapot</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>2010-01</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RELEASE_DEC|Xbox 360'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEVKIT|Xbox 360'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='RELEASE_DEC|Xbox 360'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEVKIT|Xbox 360'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(Xbox360TechPreviewInclude);$(XDKInstallDir)\include\xbox;$(SolutionDir)\cryptopp;$(SolutionDir)\xkelib;$(ProjectDir);$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Build\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(ProjectName)\$(Configuration)\Intermediate\</IntDir>
+    <OutputFile>$(IntDir)$(TargetName).dll</OutputFile>
+    <ImageXexOutput>$(SolutionDir)Build\$(ProjectName)\$(Configuration)\Trashpot.xex</ImageXexOutput>
+    <RemoteRoot>DEVKIT:\TeapotLive\</RemoteRoot>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(Xbox360TechPreviewInclude);$(XDKInstallDir)\include\xbox;$(SolutionDir)\cryptopp;$(SolutionDir)\xkelib;$(ProjectDir);$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Build\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(ProjectName)\$(Configuration)\Intermediate\</IntDir>
+    <OutputFile>$(IntDir)$(TargetName).dll</OutputFile>
+    <ImageXexOutput>$(SolutionDir)Build\$(ProjectName)\$(Configuration)\Crackpot.xex</ImageXexOutput>
+    <RemoteRoot>hdd:\TeapotLive\</RemoteRoot>
+    <CustomBuildBeforeTargets>
+    </CustomBuildBeforeTargets>
+    <CustomBuildAfterTargets>
+    </CustomBuildAfterTargets>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RELEASE_DEC|Xbox 360'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(Xbox360TechPreviewInclude);$(XDKInstallDir)\include\xbox;$(SolutionDir)\cryptopp;$(SolutionDir)\xkelib;$(ProjectDir);$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Build\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(ProjectName)\$(Configuration)\Intermediate\</IntDir>
+    <OutputFile>$(IntDir)$(TargetName).dll</OutputFile>
+    <ImageXexOutput>$(SolutionDir)Build\$(ProjectName)\$(Configuration)\Teapot.xex</ImageXexOutput>
+    <RemoteRoot>hdd:\TeapotLive\</RemoteRoot>
+    <CustomBuildBeforeTargets />
+    <CustomBuildAfterTargets />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEVKIT|Xbox 360'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(Xbox360TechPreviewInclude);$(XDKInstallDir)\include\xbox;$(SolutionDir)\cryptopp;$(SolutionDir)\xkelib;$(ProjectDir);$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Build\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Build\$(ProjectName)\$(Configuration)\Intermediate\</IntDir>
+    <OutputFile>$(IntDir)$(TargetName).dll</OutputFile>
+    <ImageXexOutput>$(SolutionDir)Build\$(ProjectName)\$(Configuration)\CrackpotXDK.xex</ImageXexOutput>
+    <RemoteRoot>DEVKIT:\TeapotLive\</RemoteRoot>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;_XBOX;_MSC_VER=1300</PreprocessorDefinitions>
+      <CallAttributedProfiling>Callcap</CallAttributedProfiling>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>xapilibd.lib;d3d9d.lib;d3dx9d.lib;xgraphicsd.lib;xboxkrnl.lib;xnetd.lib;xaudiod2.lib;xactd3.lib;x3daudiod.lib;xmcored.lib;xbdm.lib;vcompd.lib</AdditionalDependencies>
+      <AdditionalOptions>/dll /ALIGN:128,4096 %(AdditionalOptions)</AdditionalOptions>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+    <Deploy />
+    <ImageXex>
+      <ConfigurationFile>$(ProjectDir)Teapot-Devkit.xml</ConfigurationFile>
+      <AdditionalSections>
+      </AdditionalSections>
+    </ImageXex>
+    <Deploy>
+      <DeploymentType>CopyToHardDrive</DeploymentType>
+      <Progress>true</Progress>
+    </Deploy>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;LTCG;_MSC_VER=1300</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <MinimalRebuild>true</MinimalRebuild>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalDependencies>xapilib.lib;d3d9ltcg.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3ltcg.lib;x3daudioltcg.lib;xmcoreltcg.lib;vcomp.lib;xhttp.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>XAPI.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/dll /ALIGN:128,4096 %(AdditionalOptions)</AdditionalOptions>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <StackCommitSize>262144</StackCommitSize>
+    </Link>
+    <Deploy />
+    <ImageXex>
+      <ConfigurationFile>$(ProjectDir)Teapot-Retail.xml</ConfigurationFile>
+      <AdditionalSections>
+      </AdditionalSections>
+    </ImageXex>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <Deploy />
+    <Deploy />
+    <Deploy />
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PreLinkEvent>
+      <Message>
+      </Message>
+    </PreLinkEvent>
+    <Deploy>
+      <DeploymentType>CopyToHardDrive</DeploymentType>
+      <Progress>true</Progress>
+    </Deploy>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RELEASE_DEC|Xbox 360'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;LTCG;_MSC_VER=1300</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <MinimalRebuild>true</MinimalRebuild>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalDependencies>xapilib.lib;d3d9ltcg.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3ltcg.lib;x3daudioltcg.lib;xmcoreltcg.lib;vcomp.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/dll /ALIGN:128,4096 %(AdditionalOptions)</AdditionalOptions>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Deploy />
+    <ImageXex>
+      <ConfigurationFile>$(ProjectDir)Teapot-Retail.xml</ConfigurationFile>
+      <AdditionalSections>
+      </AdditionalSections>
+    </ImageXex>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(SolutionDir)Build\$(ProjectName)\$(Configuration)\Teapot.xex" "..\..\Server\Teapot Server\bin\Release\Trashpot.xex"</Command>
+    </PostBuildEvent>
+    <Deploy />
+    <Deploy />
+    <Deploy>
+      <DeploymentType>EmulateDvd</DeploymentType>
+      <Progress>true</Progress>
+      <ForceCopy>true</ForceCopy>
+    </Deploy>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>
+      </Message>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+    <PreLinkEvent>
+      <Message>
+      </Message>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_DEVKIT|Xbox 360'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <StringPooling>true</StringPooling>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <ExceptionHandling>false</ExceptionHandling>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>NDEBUG;_XBOX;LTCG;_MSC_VER=1300</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName).pdb</ProgramDatabaseFile>
+      <SetChecksum>true</SetChecksum>
+      <AdditionalDependencies>xexw.lib;xapilib.lib;d3d9ltcg.lib;d3dx9.lib;xgraphics.lib;xboxkrnl.lib;xnet.lib;xaudio2.lib;xact3ltcg.lib;x3daudioltcg.lib;xmcoreltcg.lib;vcomp.lib;xhttp.lib</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>XAPI.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/dll /ALIGN:128,4096 %(AdditionalOptions)</AdditionalOptions>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <Deploy />
+    <ImageXex>
+      <ConfigurationFile>$(ProjectDir)Teapot-Devkit.xml</ConfigurationFile>
+      <AdditionalSections>
+      </AdditionalSections>
+    </ImageXex>
+    <Deploy />
+    <PostBuildEvent>
+      <Command>"$(SolutionDir)Build\$(ProjectName)\$(Configuration)\ClientObfuscator.exe" &amp; xcopy /Y "$(SolutionDir)Build\$(ProjectName)\$(Configuration)\Teapot.xex" "..\..\Server\Teapot Server\bin\Release\Trashpot_DEVKIT.xex"</Command>
+    </PostBuildEvent>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <Deploy>
+      <DeploymentType>CopyToHardDrive</DeploymentType>
+    </Deploy>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="appmanager\AppEvents.cpp" />
+    <ClCompile Include="appmanager\AppInstance.cpp" />
+    <ClCompile Include="appmanager\AppManager.cpp" />
+    <ClCompile Include="appmanager\AppManager_Hooks.cpp" />
+    <ClCompile Include="cheats\Anticheat.cpp" />
+    <ClCompile Include="cheats\CheatEngine.cpp" />
+    <ClCompile Include="globals.cpp" />
+    <ClCompile Include="hooks_sys.cpp" />
+    <ClCompile Include="hud\dashboard\DashboardHooks.cpp" />
+    <ClCompile Include="hud\dashboard\DashXUI.cpp" />
+    <ClCompile Include="hud\dashboard\dash.cpp" />
+    <ClCompile Include="hud\hud.cpp" />
+    <ClCompile Include="hud\preferences\designer.cpp" />
+    <ClCompile Include="hud\preferences\options.cpp" />
+    <ClCompile Include="hud\preferences\pluginManager.cpp" />
+    <ClCompile Include="hud\scn5Tab.cpp" />
+    <ClCompile Include="hud\scnMainMenu.cpp" />
+    <ClCompile Include="hud\token.cpp" />
+    <ClCompile Include="hud\xui.cpp" />
+    <ClCompile Include="iniConfig.cpp" />
+    <ClCompile Include="Memory.cpp" />
+    <ClCompile Include="networking\netclient.cpp" />
+    <ClCompile Include="networking\net_request.cpp" />
+    <ClCompile Include="NtFile.cpp" />
+    <ClCompile Include="Entry.cpp" />
+    <ClCompile Include="security\aes.cpp" />
+    <ClCompile Include="security\nativeInvoker.cpp" />
+    <ClCompile Include="security\segmentHashing.cpp" />
+    <ClCompile Include="security\XMitSecMsg.cpp" />
+    <ClCompile Include="Services.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_LTCG|Xbox 360'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RELEASE_DEC|Xbox 360'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release_DEVKIT|Xbox 360'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Xbox 360'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="strings.cpp" />
+    <ClCompile Include="Teapot.cpp" />
+    <ClCompile Include="Updater.cpp" />
+    <ClCompile Include="util\bugtracking.cpp" />
+    <ClCompile Include="util\Detour.cpp" />
+    <ClCompile Include="util\INIReader.cpp" />
+    <ClCompile Include="util\io.cpp" />
+    <ClCompile Include="util\timers.cpp" />
+    <ClCompile Include="util\util.cpp" />
+    <ClCompile Include="util\XeCrypt.cpp" />
+    <ClCompile Include="xbox\challenges.cpp" />
+    <ClCompile Include="xbox\Devkit.cpp" />
+    <ClCompile Include="xbox\Hypervisor.cpp" />
+    <ClCompile Include="xbox\kv.cpp" />
+    <ClCompile Include="xbox\XamExecuteChallenge.cpp" />
+    <ClCompile Include="xbox\XBL.cpp" />
+    <ClCompile Include="xbox\XNotify.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="appmanager\AppEvents.h" />
+    <ClInclude Include="appmanager\AppInstance.h" />
+    <ClInclude Include="appmanager\AppManager.h" />
+    <ClInclude Include="appmanager\AppManager_Hooks.h" />
+    <ClInclude Include="cheats\Anticheat.h" />
+    <ClInclude Include="cheats\CheatEngine.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="dlaunch\dlaunch.h" />
+    <ClInclude Include="dlaunch\dlaunch_defs.h" />
+    <ClInclude Include="exports.h" />
+    <ClInclude Include="globals.h" />
+    <ClInclude Include="GTAScratch.h" />
+    <ClInclude Include="hooks_sys.h" />
+    <ClInclude Include="hud\dashboard\DashboardHooks.h" />
+    <ClInclude Include="hud\dashboard\DashXUI.h" />
+    <ClInclude Include="hud\dashboard\dash.h" />
+    <ClInclude Include="hud\hud.h" />
+    <ClInclude Include="hud\preferences\designer.h" />
+    <ClInclude Include="hud\preferences\options.h" />
+    <ClInclude Include="hud\preferences\pluginManager.h" />
+    <ClInclude Include="hud\scnMainMenu.h" />
+    <ClInclude Include="hud\ScnTab5.h" />
+    <ClInclude Include="hud\token.h" />
+    <ClInclude Include="hud\xui.h" />
+    <ClInclude Include="iniConfig.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="networking\net.h" />
+    <ClInclude Include="networking\netclient.h" />
+    <ClInclude Include="networking\net_request.h" />
+    <ClInclude Include="NtFile.h" />
+    <ClInclude Include="security\aes.h" />
+    <ClInclude Include="security\nativeInvoker.h" />
+    <ClInclude Include="security\natives.h" />
+    <ClInclude Include="security\segmentHashing.h" />
+    <ClInclude Include="security\XMitSecMsg.h" />
+    <ClInclude Include="Services.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="strings.h" />
+    <ClInclude Include="Teapot.h" />
+    <ClInclude Include="Updater.h" />
+    <ClInclude Include="util\bugtracking.h" />
+    <ClInclude Include="util\Detour.h" />
+    <ClInclude Include="util\Events.h" />
+    <ClInclude Include="util\INIReader.h" />
+    <ClInclude Include="util\io.h" />
+    <ClInclude Include="util\SimpleIni.h" />
+    <ClInclude Include="util\timer.h" />
+    <ClInclude Include="util\util.h" />
+    <ClInclude Include="util\XeCrypt.h" />
+    <ClInclude Include="xbox\challenges.h" />
+    <ClInclude Include="xbox\Devkit.h" />
+    <ClInclude Include="xbox\Hypervisor.h" />
+    <ClInclude Include="xbox\kv.h" />
+    <ClInclude Include="xbox\XamExecuteChallenge.h" />
+    <ClInclude Include="xbox\XBL.h" />
+    <ClInclude Include="xbox\XNotify.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\xkelib\xkelib.vcxproj">
+      <Project>{83fef217-22ee-4768-80bf-9f48d5b4564c}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NOTES.log" />
+    <None Include="Teapot-Devkit.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Teapot-Retail.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

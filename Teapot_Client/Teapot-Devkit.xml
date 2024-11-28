@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xex>
+  <baseaddr addr="0x90EA0000"/>
+  <sysdll/>
+  <exportcontainer name="module.def"/>
+  <format>
+    <compressed/>
+  </format>
+  <mediatypes>
+    <default/>
+    <allpackages/>
+  </mediatypes>
+  <gameregion>
+    <all/>
+  </gameregion>
+
+  <!-- This will make it look like xosc9v2. -->
+  <titleid id="0x00090002"/>
+  <version major="2" minor="0" build="17544" qfe="0"/>
+  <section file="packages/Teapot.xzp" name="Teapot" memory="RO"/>
+  <section file="secdata.bin" name="secdata" memory="RO"/>
+  <section file="SPFG.bin" name="SPFG" memory="RO"/>
+</xex>

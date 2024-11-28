@@ -1,0 +1,17 @@
+Secdata
+
+0x22 = BLDRFlagsAddress (0x06)
+0x3 = BLDRFlagsLen (0x2)
+0x80 = FuseCount (0xC)
+0x1C = fuseSetLen (0x8)
+0x1FA = fuseSetAddrOffset (0x4)
+
+0x55 = ce.loadInfo.RC4Key
+0x65 = ce.addresses
+0x69 = ce.loadInfo.addrsLen
+0x74 = ce.getCEStatusPtr
+
+0x180 = HUD Encryption key
+0x38 = Socket encryption key
+
+0x22C = 0093B3E4 (NetDll_XHttpConnect)

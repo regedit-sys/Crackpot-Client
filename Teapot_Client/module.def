@@ -1,0 +1,3 @@
+EXPORTS
+	Extern_ResolveGeoIP @1
+	Extern_ResolveGeoIPv2 @2

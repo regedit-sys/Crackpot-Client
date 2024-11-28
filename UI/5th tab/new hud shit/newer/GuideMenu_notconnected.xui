@@ -1,0 +1,54 @@
+<XuiCanvas version="000c">
+<Properties>
+<Id>XuiCanvas</Id>
+<Width>425.000000</Width>
+<Height>180.000000</Height>
+</Properties>
+<XuiScene>
+<Properties>
+<Id>ScnMainMenu</Id>
+<Width>323.000000</Width>
+<Height>200.000000</Height>
+<Position>0.000000,1.000000,0.000000</Position>
+<ClassOverride>ScnMainMenu</ClassOverride>
+<DefaultFocus>btn_notConnected_reboot</DefaultFocus>
+</Properties>
+<XuiNavButton>
+<Properties>
+<Id>btn_notConnected_reboot</Id>
+<Width>221.525940</Width>
+<Height>28.000000</Height>
+<Position>48.962097,147.556015,0.000000</Position>
+<Visual>XuiButtonGuide</Visual>
+<NavRight>XuiCheckbox1</NavRight>
+<Text>          Reboot Now</Text>
+</Properties>
+</XuiNavButton>
+<XuiText>
+<Properties>
+<Id>header</Id>
+<Width>257.399994</Width>
+<Height>26.000000</Height>
+<Position>14.000000,6.000000,0.000000</Position>
+<Text>Connection Error!</Text>
+<TextColor>0xffeb0f0f</TextColor>
+<DropShadowColor>0x800f0f0f</DropShadowColor>
+<TextStyle>284</TextStyle>
+</Properties>
+</XuiText>
+<XuiText>
+<Properties>
+<Id>bodyTxt</Id>
+<Width>308.749603</Width>
+<Height>109.000000</Height>
+<Position>19.861349,34.746162,0.000000</Position>
+<Text>Your console cannot connect
+to the TeapotLive servers right
+now. Press reboot below to 
+attempt another connection.</Text>
+<TextColor>0xff0f0f0f</TextColor>
+<DropShadowColor>0x800f0f0f</DropShadowColor>
+</Properties>
+</XuiText>
+</XuiScene>
+</XuiCanvas>

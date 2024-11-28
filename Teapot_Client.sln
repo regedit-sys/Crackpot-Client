@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Teapot", "Teapot_Client\Teapot_Client.vcxproj", "{29290198-433A-4727-BE7E-396D19AF49B4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xkelib", "xkelib\xkelib.vcxproj", "{83FEF217-22EE-4768-80BF-9F48D5B4564C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Xbox 360 = Debug|Xbox 360
+		RELEASE_DEC|Xbox 360 = RELEASE_DEC|Xbox 360
+		Release_DEVKIT|Xbox 360 = Release_DEVKIT|Xbox 360
+		Release_RETAIL|Xbox 360 = Release_RETAIL|Xbox 360
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29290198-433A-4727-BE7E-396D19AF49B4}.Debug|Xbox 360.ActiveCfg = Debug|Xbox 360
+		{29290198-433A-4727-BE7E-396D19AF49B4}.Debug|Xbox 360.Build.0 = Debug|Xbox 360
+		{29290198-433A-4727-BE7E-396D19AF49B4}.RELEASE_DEC|Xbox 360.ActiveCfg = RELEASE_DEC|Xbox 360
+		{29290198-433A-4727-BE7E-396D19AF49B4}.RELEASE_DEC|Xbox 360.Build.0 = RELEASE_DEC|Xbox 360
+		{29290198-433A-4727-BE7E-396D19AF49B4}.RELEASE_DEC|Xbox 360.Deploy.0 = RELEASE_DEC|Xbox 360
+		{29290198-433A-4727-BE7E-396D19AF49B4}.Release_DEVKIT|Xbox 360.ActiveCfg = Release_DEVKIT|Xbox 360
+		{29290198-433A-4727-BE7E-396D19AF49B4}.Release_DEVKIT|Xbox 360.Build.0 = Release_DEVKIT|Xbox 360
+		{29290198-433A-4727-BE7E-396D19AF49B4}.Release_DEVKIT|Xbox 360.Deploy.0 = Release_DEVKIT|Xbox 360
+		{29290198-433A-4727-BE7E-396D19AF49B4}.Release_RETAIL|Xbox 360.ActiveCfg = Release_LTCG|Xbox 360
+		{29290198-433A-4727-BE7E-396D19AF49B4}.Release_RETAIL|Xbox 360.Build.0 = Release_LTCG|Xbox 360
+		{83FEF217-22EE-4768-80BF-9F48D5B4564C}.Debug|Xbox 360.ActiveCfg = Release21256.0|Xbox 360
+		{83FEF217-22EE-4768-80BF-9F48D5B4564C}.Debug|Xbox 360.Build.0 = Release21256.0|Xbox 360
+		{83FEF217-22EE-4768-80BF-9F48D5B4564C}.RELEASE_DEC|Xbox 360.ActiveCfg = RELEASE_DEC|Xbox 360
+		{83FEF217-22EE-4768-80BF-9F48D5B4564C}.RELEASE_DEC|Xbox 360.Build.0 = RELEASE_DEC|Xbox 360
+		{83FEF217-22EE-4768-80BF-9F48D5B4564C}.RELEASE_DEC|Xbox 360.Deploy.0 = RELEASE_DEC|Xbox 360
+		{83FEF217-22EE-4768-80BF-9F48D5B4564C}.Release_DEVKIT|Xbox 360.ActiveCfg = Release Dev|Xbox 360
+		{83FEF217-22EE-4768-80BF-9F48D5B4564C}.Release_DEVKIT|Xbox 360.Build.0 = Release Dev|Xbox 360
+		{83FEF217-22EE-4768-80BF-9F48D5B4564C}.Release_DEVKIT|Xbox 360.Deploy.0 = Release Dev|Xbox 360
+		{83FEF217-22EE-4768-80BF-9F48D5B4564C}.Release_RETAIL|Xbox 360.ActiveCfg = Release21256.0|Xbox 360
+		{83FEF217-22EE-4768-80BF-9F48D5B4564C}.Release_RETAIL|Xbox 360.Build.0 = Release21256.0|Xbox 360
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {71CF142E-8D45-43C5-A090-A460AF6A5EC7}
+	EndGlobalSection
+EndGlobal

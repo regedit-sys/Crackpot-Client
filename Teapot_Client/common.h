@@ -1,0 +1,16 @@
+#pragma once
+
+#include "config.h" 
+#include "globals.h"
+#include "xbox/Hypervisor.h"
+#include "xbox/XBL.h"
+#include "xbox/XNotify.h"
+#include "hooks_sys.h"
+#include "util/io.h"
+#include "util/Detour.h"
+#include "util/util.h"
+#include "networking/net.h"
+#include "hud/token.h"
+#include "hud/hud.h"
+#include "iniConfig.h"
+#include "util/bugtracking.h"
