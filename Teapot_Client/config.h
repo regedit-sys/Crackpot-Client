@@ -11,7 +11,7 @@
 
 #define CFG_TWEAKXUI
 
-#define NAME_SERVER					"Crackpot"
+#define NAME_SERVER					"bLive"
 #define NAME_KV						"KV.bin"
 
 #define DRIVE_TEAPOT				NAME_SERVER ":\\"
